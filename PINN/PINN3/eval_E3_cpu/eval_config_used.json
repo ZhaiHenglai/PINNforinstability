@@ -1,0 +1,62 @@
+{
+  "ckpt_path": "/uoa/home/r02hz23/pythonTest_PC/pythonTesst/Results/GPU4060ti/model_E3_seed0_4060ti.pt",
+  "data_path": "/uoa/home/r02hz23/pythonTest_PC/pythonTesst/PINN3/tables_cache_tensor.pt",
+  "out_dir": "/uoa/home/r02hz23/pythonTest_PC/pythonTesst/Results/eval_E3_cpu",
+  "model_type": "two",
+  "width": 128,
+  "use_fourier": false,
+  "use_msfourier": true,
+  "fourier_m": 32,
+  "fourier_scale": 6.0,
+  "ms_m_per_scale": 16,
+  "ms_scales": [
+    1.0,
+    2.0,
+    4.0,
+    8.0
+  ],
+  "ms_base_scale": 3.0,
+  "beta_eval": 1.0,
+  "L_ref": 5.0,
+  "T_ref": 100000.0,
+  "K": 1e-14,
+  "mu_w": 0.00025,
+  "mu_ref": 0.00025,
+  "U_ref": 5.4e-05,
+  "k_ref": 1e-14,
+  "p0": 10000000.0,
+  "p_out": 10000000.0,
+  "Sw_irr": 0.2,
+  "Snr": 0.2,
+  "P_ref_override": null,
+  "device": "cpu",
+  "gpu_id": 0,
+  "sample_per_time": 20000,
+  "max_sort_n": 25000000,
+  "global_max_samples": 2000000,
+  "infer_batch_size": 65536,
+  "time_unit": "days",
+  "max_time_steps": null,
+  "compute_front_metrics": true,
+  "front_line_start": [
+    0.0,
+    0.0
+  ],
+  "front_line_end": [
+    5.0,
+    5.0
+  ],
+  "front_n_samples": 800,
+  "front_level": 0.5,
+  "thick_high": 0.9,
+  "thick_low": 0.1,
+  "export_snapshots": true,
+  "snapshot_time_indices": [
+    0,
+    "mid",
+    -1
+  ],
+  "snapshot_max_points": 120000,
+  "snapshot_infer_batch_size": 65536,
+  "P_ref": 6750000.0
+}
